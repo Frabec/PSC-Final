@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  <tabs>
+    <Tab text="Network analysis">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Network analysis tool " BorderPane.alignment="BOTTOM_CENTER">
+                     <BorderPane.margin>
+                        <Insets top="75.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+               </top>
+               <center>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleAnalysisButonAction" text="Launch" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </Button>
+               </center>
+               <bottom>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fx:id="attack" fill="#f50606" strokeType="OUTSIDE" strokeWidth="0.0" text="Attack detected !">
+                           <font>
+                              <Font size="41.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="normal" fill="#1ba422" strokeType="OUTSIDE" strokeWidth="0.0" text="Network Safe">
+                           <font>
+                              <Font size="41.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+               </bottom>
+            </BorderPane>
+         </content>
+    </Tab>
+    <Tab text="Network data analysis">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Button mnemonicParsing="false" onAction="#handleBrowserButonAction" text="Browse file" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Browse file containing network data " textAlignment="CENTER" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="75.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+               </top>
+            </BorderPane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>
