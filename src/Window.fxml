@@ -12,9 +12,9 @@
   <tabs>
     <Tab text="Network analysis">
          <content>
-            <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@application/application.css">
                <top>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Network analysis tool " BorderPane.alignment="BOTTOM_CENTER">
+                  <Text fill="#fffdfd" strokeType="OUTSIDE" strokeWidth="0.0" text="Network analysis tool " BorderPane.alignment="BOTTOM_CENTER">
                      <BorderPane.margin>
                         <Insets top="75.0" />
                      </BorderPane.margin>

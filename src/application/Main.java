@@ -25,6 +25,7 @@ public class Main extends Application {
 			Main.primaryStage=primaryStage;
 			Parent root = FXMLLoader.load(getClass().getResource("/Window.fxml"));
 			Scene scene = new Scene(root,800,900);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Cyber-attack detector");
 			
